@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcus Oskarsson | Portfolio</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1a4787e29d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="top-nav-list">
+          <li><a href="#about" class="navigation">Om mig</a></li>
+          <li><a href="#projects" class="navigation">Projekt</a></li>
+          <li><a href="#cv" class="navigation">CV</a></li>
+        </ul>
+        <div class="progress-done"></div>
+        <div class="progress-left"></div>
+      </nav>
+      <div class="top-contact">
+        <h1>Marcus Oskarsson</h1>
+        <p>Utvecklare med fokus JavaScript & TypeScript</p>
+        <!-- <address>
+          <a href="mailto:marcusoskarsson@hotmail.com">marcusoskarsson@hotmail.com</a>
+        </address> -->
+      </div>
+      <img src="./img/profile-picture.jpg" alt="Marcus Oskarsson" />
+    </header>
+
+    <main id="about">
+      <section class="about">
+        <h2>Om mig</h2>
+        <p>
+          Hej, mitt namn är Marcus och jag studerar till
+          <a
+            href="https://www.iths.se/utbildningar/javascript-utvecklare/"
+            target="_blank"
+            >JavaScript-utvecklare vid IT-högskolan.</a
+          >
+        </p>
+        <p>
+          Uppvuxen i Stockholm men flyttade till Borås och vidare till Göteborg
+          för ett par år sedan. Har arbetat som bibliotekarie sen 2015 på ett
+          mindre förortsbibliotek. Yrket till trots så ägnar jag inte mina
+          kvällar åt speciellt mycket läsning utan brukar nog snarare fastna
+          framför en serie eller vid datorn.
+        </p>
+        <p>
+          Till hösten 2023 ska jag ut på min första
+          <abbr title="Lärande i arbete">LIA</abbr>, som jag gör hos
+          <a href="https://www.republic.se/">Republic</a>. Utbildningen
+          fortsätter fram till våren 2024 och avslutas med en andra, längre (16
+          veckor), LIA-period. Tills dess har vi inom utbildningen lärt oss
+          grunderna i webbutveckling (JavaScript, TypeScript, ramverk (React,
+          Vue), databaser (SQL, NoSQL), testning (TDD) och agil-utveckling).
+        </p>
+      </section>
+      <section class="projects" id="projects">
+        <h2>Projekt</h2>
+        <div class="project-cards-container">
+          <article class="project-card">
+            <img src="/img/weather.png" alt="Förhandsvisning av väderapp" />
+            <h3>Väderapp</h3>
+            <p>
+              Ett mindre projekt i JavaScript med syfte att bygga en responsiv
+              hemsida baserad på extern data.
+            </p>
+            <a
+              href="https://github.com/Marcus-Oskarsson/weather"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i> <span>Github</span>
+            </a>
+            <a
+              href="https://weather-app-native-javascript.netlify.app/"
+              target="_blank"
+            >
+              <i class="far fa-eye"></i> <span>Se live</span>
+            </a>
+          </article>
+          <article class="project-card">
+            <img src="/img/yahtzee.png" alt="Förhandsvisning av Yahtzee" />
+            <h3>Yahtzee</h3>
+            <p>
+              Yahtzee skapat med Python och flask. Arbetade med klasser och skapade några enkla enhetstest.
+            </p>
+            <a
+              href="https://github.com/Marcus-Oskarsson/Yahtzee"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i> <span>Github</span>
+            </a>
+          </article>
+        </div>
+      </section>
+      <section class="cv" id="cv">
+        <h2>Erfarenheter</h2>
+        <article>
+          <h3>Utbildning</h3>
+          <h4>IT-högskolan</h4>
+          <p>JavaScript-utvecklare <time>2022</time>–<time>2024</time></p>
+          <p>
+            Fullstack-utveckling med JavaScript, agila metoder och
+            webbtillgänglighet
+          </p>
+          <h4>Högskolan i Borås</h4>
+          <p>Bibliotekarie <time>2014</time>–<time>2017</time></p>
+          <p>Kandidatprogram i Biblioteks- och informationsvetenskap</p>
+        </article>
+        <article>
+          <h3>Arbete</h3>
+          <h4>Göteborgs stad</h4>
+          <p>Bibliotekarie / biblioteksassistent <time>2015</time>–</p>
+          <p>
+            Arbetar mot vuxna med litteraturförmedling. Delaktig i Göteborgs
+            stads arbete med det nationella projektet Digitalt först med
+            användaren i fokus, som syftar till att höja bibliotekariers
+            digitala kompetens genom kollegialt lärande.
+          </p>
+        </article>
+        <article>
+          <h3>Verktyg och programmeringsspråk</h3>
+          <h4>Versionshantering</h4>
+          <p>Git och Github</p>
+          <h4>Programmeringsspråk</h4>
+          <h5>JavaScript</h5>
+          <p>Fullstack. Insatt i Vue, React, Express</p>
+          <h4>Databaser</h4>
+          <h5>SQL</h5>
+          <p>Kan grunderna i MySQL</p>
+          <h5>NoSQL</h5>
+          <p>Grunder i MongoDB</p>
+          <h4>Design</h4>
+          <p>Figma</p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <a
+        class="social-media-icons"
+        href="https://github.com/Marcus-Oskarsson"
+        target="_blank"
+      >
+        <i class="fab fa-github"></i> <span>Connect with me</span>
+      </a>
+      <a
+        class="social-media-icons"
+        href="https://www.linkedin.com/in/marcus-oskarsson/"
+        target="_blank"
+      >
+        <i class="fa fa-linkedin-square"></i> <span>Connect with me</span>
+      </a>
+    </footer>
+  </body>
+</html>
